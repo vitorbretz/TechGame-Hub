@@ -1,10 +1,3 @@
-@import "tailwindcss";
-@layer components {
-  .btn {
-    @apply px-4 py-2 rounded text-white font-semibold;
-  }
-
-  .btn-primary {
-    @apply bg-blue-500 hover:bg-blue-600;
-  }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
