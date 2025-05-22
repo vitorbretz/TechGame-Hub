@@ -6,26 +6,29 @@
     <link href="./output.css" rel="stylesheet">
     <title>TechGame-Hub</title>
 </head>
-<body class="">
-    <header class="bg-cor3">
-        <div class="container">
-            <div class="">
-                <img src="assets/img/logo/ChatGPT Image 13 de mai. de 2025, 23_29_07.png" alt="">
+<body class="bg-cor6 w-full h-full" style="background-image: url(./assets/img/detalhe-body/download\ \(1\).png); background-size: 11px;">
+    <header class="">
+        <div class="fixed flex justify-between items-center h-20 w-full bg-cor4 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] px-6 ">
+
+            <div class="h-full w-40 ">
+                <img class="w-full cursor-pointer h-full object-cover" src="assets/img/logo/tech_game_hub_header_150px.png" alt="">
             </div>
-            <nav>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <div>
+            <button id="menu-btn" class=" w-8 h-8 flex flex-col justify-between items-center group">
+                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-4"></span>
+                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
+                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-3"></span>
+            </button>
             
-            </div>
         </div>
     </header>
     
 </body>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('open');
+      menuBtn.classList.toggle('group-open'); // para o Tailwind v3 lidar com `group-[.open]`
+    });
+  </script>
 </html>

@@ -11,7 +11,7 @@ module.exports = {
         cor3: "#201229",
         cor4: "#7116E9",
         cor5: "#97A5E4",
-        cor6: "#0C032D",
+        cor6: "#0f0f3d",
         cor7: "#1C7D94",
         cor8: "#24A6A6",
       }
