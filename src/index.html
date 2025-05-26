@@ -13,21 +13,35 @@
     <header class="">
         <div class="fixed flex justify-between items-center h-20 w-full bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] px-6 ">
 
-            <div class="h-full flex items-center w-24">
+            <div class="h-full flex items-center w-24 cursor-pointer">
                 <img class="w-full cursor-pointer h-full object-contain inline-block" src="assets/img/logo/—Pngtree—vdeo games console neon style_5984009.png " alt="">
                 <span class=" text-2xl text-cor7 font-bold">TechGame-</span>
                 <span class="text-2xl text-cor2  font-bold">Hub</span>
             </div>
-            <button id="menu-btn" class=" w-8 h-8 flex flex-col justify-between items-center group">
-                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-4"></span>
-                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
-                <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-3"></span>
-            </button>
+            <div class="flex items-center gap-4">
+                <button id="menu-btn" class=" w-8 h-8 flex flex-col justify-between items-center group">
+                    <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-4"></span>
+                    <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
+                    <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-3"></span>
+                </button>
+                <div id="dropdown-menu" class="absolute top-20 right-6 bg-cor5 text-cor2 rounded-lg shadow-md hidden flex-col gap-2 p-4 z-50">
+                    <a href="#" class="hover:text-cor3 transition-colors">Início</a>
+                    <a href="#" class="hover:text-cor3 transition-colors">Criar Post</a>
+                    <a href="#" class="hover:text-cor3 transition-colors">Sobre</a>
+                    <a href="#" class="hover:text-cor3 transition-colors">Contato</a>
+                    <a href="#" class="hover:text-cor3 transition-colors">Log In</a>
+                </div>
+                <div class="h-[50px] w-[50px] rounded-xl cursor-pointer">
+                    <img class="border-4  border-solid border-cor6 rounded-2xl" src="assets/img/face/WhatsApp Image 2025-05-26 at 18.36.44.jpeg" alt="">
+
+                </div>
+            </div>
             
         </div>
     </header>
     
 </body>
+<script src=""></script>
 <script>
     const menuBtn = document.getElementById('menu-btn');
 
