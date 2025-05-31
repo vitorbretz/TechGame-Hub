@@ -10,7 +10,7 @@
     <title>TechGame-Hub</title>
 </head>
 <body class="bg-cor6 w-full h-full" style="background-image: url(./assets/img/detalhe-body/download\ \(1\).png); background-size: 11px;">
-    <header class="">
+    <header class=" relative">
         <div class="fixed flex justify-between items-center h-20 w-full bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] px-6 ">
 
             <div class="h-full flex items-center w-24 cursor-pointer">
@@ -18,19 +18,28 @@
                 <span class=" text-2xl text-cor7 font-bold">TechGame-</span>
                 <span class="text-2xl text-cor2  font-bold">Hub</span>
             </div>
-            <div class="flex items-center gap-4">
-                <button id="menu-btn" class=" w-8 h-8 flex flex-col justify-between items-center group">
-                    <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:translate-y-4"></span>
+            <div class=" hidden text-cor2 lg:flex">
+                <a href="#" class="hover:text-cor3 transition-colors block p-4 m-auto text-[18px]">Início</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-4 m-auto text-[18px] lg:p-5">Criar Post</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-4 m-auto text-[18px] lg:p-5">Sobre</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-4 m-auto text-[18px] lg:p-5">Contato</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-4 m-auto text-[18px] lg:p-5">Log In</a>
+
+            </div>
+            <div class="flex items-center gap-4" >
+                <button id="menu-btn" class=" w-8 h-8 flex flex-col justify-between items-center group cursor-pointer lg:hidden">
+                    <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-44 group-[.open]:translate-y-4"></span>
                     <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
                     <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:-translate-y-3"></span>
                 </button>
-                <div id="dropdown-menu" class="absolute top-20 right-6 bg-cor5 text-cor2 rounded-lg shadow-md hidden flex-col gap-2 p-4 z-50">
-                    <a href="#" class="hover:text-cor3 transition-colors">Início</a>
-                    <a href="#" class="hover:text-cor3 transition-colors">Criar Post</a>
-                    <a href="#" class="hover:text-cor3 transition-colors">Sobre</a>
-                    <a href="#" class="hover:text-cor3 transition-colors">Contato</a>
-                    <a href="#" class="hover:text-cor3 transition-colors">Log In</a>
+                <div id="dropdown-menu" class="absolute top-20 right-8 bg-cor5 text-cor2 shadow-md hidden flex-col gap-10 p-4 z-50">
+                    <a href="#" class="hover:text-cor3 transition-colors block p-5 m-auto text-[18px]">Início</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-5 m-auto text-[18px]">Criar Post</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-5 m-auto text-[18px]">Sobre</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-5 m-auto text-[18px]">Contato</a>
+                    <a href="#" class="hover:text-cor3 transition-colors block p-5 m-auto text-[18px]">Log In</a>
                 </div>
+                
                 <div class="h-[50px] w-[50px] rounded-xl cursor-pointer">
                     <img class="border-4  border-solid border-cor6 rounded-2xl" src="assets/img/face/WhatsApp Image 2025-05-26 at 18.36.44.jpeg" alt="">
 
@@ -41,13 +50,5 @@
     </header>
     
 </body>
-<script src=""></script>
-<script>
-    const menuBtn = document.getElementById('menu-btn');
-
-    menuBtn.addEventListener('click', () => {
-      menuBtn.classList.toggle('open');
-      menuBtn.classList.toggle('group-open'); // para o Tailwind v3 lidar com `group-[.open]`
-    });
-  </script>
+<script type="module" src="./scripts/script.js"></script>
 </html>
