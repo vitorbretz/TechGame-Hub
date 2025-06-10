@@ -13,7 +13,7 @@ module.exports = {
         cor5: "#6F6AF8",
         cor6: "#0f0f3d",
         cor7: "#d4bcfa",
-        cor8: "#24A6A6",
+        cor8: "#14143a",
       }
     },
   },
