@@ -933,6 +933,15 @@ video {
   line-height: 1.75rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -967,6 +976,10 @@ video {
 .text-cor7 {
   --tw-text-opacity: 1;
   color: rgb(212 188 250 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .shadow-\[0_10px_10px_rgba\(0\2c 0\2c 0\2c 0\.20\)\] {
