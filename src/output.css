@@ -641,10 +641,6 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .block {
   display: block;
 }
@@ -712,10 +708,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.basis-auto {
-  flex-basis: auto;
 }
 
 .origin-top {

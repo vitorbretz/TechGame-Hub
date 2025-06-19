@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link href="../../output.css" rel="stylesheet" />
+  <title>TechGame-Hub</title>
+</head>
+<body
+  class="bg-cor6 w-full h-full"
+  style="background-image: url('../../assets/img/detalhe-body/download (1).png'); background-size: 11px;"
+>
+  <header
+    class="py-6 fixed top-0 left-0 w-full z-50 bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] md:p-6"
+  >
+    <div class="flex justify-between items-center h-10 ">
+      <!-- Logo -->
+      <div class="h-full flex items-center w-24 cursor-pointer">
+        <img
+          class="w-full h-full object-contain"
+          src="../../assets/img/logo/—Pngtree—vdeo games console neon style_5984009.png"
+          alt="Logo TechGame-Hub"
+        />
+        <span class="text-2xl text-cor7 font-bold">TechGame-</span>
+        <span class="text-2xl text-cor2 font-bold">Hub</span>
+      </div>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden text-cor2 lg:flex">
+        <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]">Início</a>
+        <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]">Criar Post</a>
+        <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]">Sobre</a>
+        <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]">Contato</a>
+        <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]">Log In</a>
+      </nav>
+
+      <!-- Menu Mobile + Perfil -->
+      <div class="flex items-center gap-4">
+        <!-- Botão menu mobile -->
+        <button
+          id="menu-btn"
+          class="w-8 h-8 flex flex-col justify-between items-center group cursor-pointer lg:hidden"
+        >
+          <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:translate-y-3.5"></span>
+          <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"></span>
+          <span class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:-translate-y-3.5"></span>
+        </button>
+
+        <!-- Menu dropdown -->
+        <div
+          id="dropdown-menu"
+          class="absolute top-20 right-8 bg-cor5 text-cor2 shadow-md hidden flex-col gap-10 p-4 z-50"
+        >
+          <a href="#" class="hover:text-cor3 transition-colors block p-5 text-[18px]">Início</a>
+          <a href="#" class="hover:text-cor3 transition-colors block p-5 text-[18px]">Criar Post</a>
+          <a href="#" class="hover:text-cor3 transition-colors block p-5 text-[18px]">Sobre</a>
+          <a href="#" class="hover:text-cor3 transition-colors block p-5 text-[18px]">Contato</a>
+          <a href="#" class="hover:text-cor3 transition-colors block p-5 text-[18px]">Log In</a>
+        </div>
+
+        <!-- Avatar -->
+        <div class="h-[50px] w-[50px] rounded-xl cursor-pointer">
+          <img
+            class="border-4 border-solid border-cor6 rounded-2xl"
+            src="../../assets/img/face/WhatsApp Image 2025-05-26 at 18.36.44.jpeg"
+            alt="Foto de perfil"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="pt-24 mt-5 ">
+    <div class="container mx-auto md:px-10 ">
+      <div class=" mx-auto p-6 rounded-xl shadow-lg md:flex md:gap-5 ">
+        
+        <div class="mx-auto bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-[18px] rounded-xl  ease-in duration-300 flex-1 md:w-[80%] shadow-xl">
+          <img
+            class="w-full rounded-lg"
+            src="assets/img/main/Jason_and_Lucia_01_With_Logos_landscape.jpg"
+            alt="Imagem do GTA VI"
+          />
+        </div>
+
+        <!-- Conteúdo do post -->
+        <div class="flex-1">
+          <span class="text-cor5 uppercase font-bold tracking-widest bg-[#a4a1f72f] px-5 py-2 rounded-xl max-w-max ">Games</span>
+          <h2 class="text-4xl font-bold mt-2 mb-4 text-cor2">
+            Lançamento do GTA VI é adiado para maio de 2026
+          </h2>
+          <p class="text-lg text-cor2 leading-relaxed">
+            Os fãs da franquia Grand Theft Auto terão que esperar um pouco mais para colocar as mãos no tão aguardado GTA VI. A Rockstar Games anunciou oficialmente que o lançamento do jogo foi adiado para <strong>maio de 2026</strong>, contrariando a expectativa anterior de chegada no final de 2025.
+          </p>
+          <p class="mt-4 text-lg text-cor2 leading-relaxed">
+            Segundo a desenvolvedora, o adiamento tem como objetivo garantir que o jogo atenda ao alto padrão de qualidade esperado pelos jogadores. “Estamos comprometidos em entregar a melhor experiência possível”, declarou a Rockstar.
+          </p>
+
+          <div class="flex justify-between items-center ">
+            <a
+              href="#"
+              class="text-cor6 uppercase font-bold tracking-widest bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 px-5 py-2 rounded-xl inline-block mt-5 cursor-pointer transition-transform duration-300 hover:scale-105"
+              >Saiba mais +</a>
+              <div class="text-cor5 text-[12px] uppercase font-bold tracking-widest bg-[#a4a1f72f] px-4 py-3 rounded-xl inline-block mt-5" >
+                06 MAR 2025
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
