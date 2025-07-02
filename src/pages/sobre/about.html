@@ -122,72 +122,50 @@
     </header>
 
     <!-- MAIN -->
-    <main class="pt-32 pb-6 mt-5 " >
-      <section
-        class="bg-cor5 p-5 rounded-2xl shadow-lg text-cor2 w-full max-w-2xl mx-auto"
-      >
-        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-cor2 text-center">
-          Criar Novo Post
-        </h2>
+    <main class="pt-32 pb-6 mt-5">
+      <section id="sobre" class="px-4 sm:px-6 py-10 max-w-6xl mx-auto text-cor2">
+  <div class="bg-cor5 rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12 p-6 md:p-10">
 
-        <form class="flex flex-col gap-5 w-full">
-          <!-- Título -->
-          <div class="flex flex-col">
-            <label for="titulo" class="text-base font-semibold mb-1"
-              >Título</label
-            >
-            <input
-              type="text"
-              id="titulo"
-              name="titulo"
-              placeholder="Digite o título do post"
-              class="p-3 text-[20px] rounded-lg bg-cor6 text-cor2 placeholder:text-cor2 border border-cor3 focus:outline-none focus:ring-2 focus:ring-cor2"
-              required
-            />
-          </div>
+    <!-- Foto -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <div class="w-40 h-40 md:w-60 md:h-60 rounded-2xl overflow-hidden border-4 border-cor6 shadow-lg">
+        <img 
+          src="../../assets/img/face/WhatsApp Image 2025-05-26 at 18.36.44.jpeg" 
+          alt="Foto de Vitor Bretz" 
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
 
-          <!-- Conteúdo -->
-          <div class="flex flex-col">
-            <label for="conteudo" class="text-base font-semibold mb-1"
-              >Conteúdo</label
-            >
-            <textarea
-              id="conteudo"
-              name="conteudo"
-              rows="5"
-              placeholder="Escreva aqui seu conteúdo..."
-              class="p-3 rounded-lg text-[20px] bg-cor6 text-cor2 placeholder:text-cor2 border border-cor3 focus:outline-none focus:ring-2 focus:ring-cor2"
-              required
-            ></textarea>
-          </div>
+    <!-- Texto -->
+    <div class="w-full md:w-1/2 space-y-6 text-center md:text-left mt-4 md:mt-0 flex flex-col gap-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-cor6">Sobre o TechGame-Hub</h2>
 
-          <!-- Botões -->
-          <div class="flex flex-col sm:flex-row gap-4 justify-end">
-             <!-- Botão customizado -->
-      <label
-        for="imagemInput"
-        class="cursor-pointer bg-cor2   shadow-lg  text-cor6 text-center font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-purple-500 to-cyan-400 transition-all w-fit hover:text-cor2  text-shadow-md"
-      >
-        Gerar Imagem
-      </label>
-      
-      <!-- Input oculto -->
-      <input
-        type="file"
-        id="imagemInput"
-        name="imagem"
-        accept="image/*"
-        class="hidden"
-      />
-            <button
-              type="submit"
-              class="bg-cor2 text-cor6 font-bold py-2 px-4 rounded-lg hover:bg-gradient-to-r from-purple-500 to-cyan-400 transition-all shadow-lg  hover:text-cor2"
-            >
-              Publicar Post
-            </button>
-          </div>
-        </form>
-      </section>
+      <p class="text-base md:text-lg leading-relaxed">
+        O <strong>TechGame-Hub</strong> foi criado para conectar gamers, desenvolvedores e entusiastas da tecnologia em um só lugar. Aqui, você pode compartilhar experiências, criar posts, acompanhar novidades e participar de uma comunidade ativa.
+      </p>
+
+      <div>
+        <h3 class="text-2xl text-cor6 font-semibold mb-1">Autor</h3>
+        <p class="text-base md:text-lg">
+          Desenvolvido por <strong>Vitor Bretz</strong>, apaixonado por tecnologia, jogos e inovação. Combinando design, código e conteúdo, o objetivo é entregar uma plataforma leve, moderna e feita para você.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl text-cor6 font-semibold mb-1">Nossos Valores</h3>
+        <ul class="list-disc pl-5 space-y-1 text-base md:text-lg">
+          <li>Comunidade inclusiva e sem toxicidade</li>
+          <li>Foco em conteúdo independente e criativo</li>
+          <li>Espaço para crescer, aprender e jogar juntos</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
     </main>
 
     <div
