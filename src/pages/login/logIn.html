@@ -19,13 +19,14 @@
       background-size: 11px;
     "
   >
+    <!-- HEADER -->
     <header
       class="py-6 fixed top-0 left-0 w-full z-50 bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] md:p-6"
     >
       <div class="flex justify-between items-center h-10">
         <!-- Logo -->
         <a
-          href="../../index.html"
+          href="./index.html"
           class="h-24 flex items-center w-24 cursor-pointer"
         >
           <img
@@ -44,21 +45,19 @@
             class="hover:text-cor3 transition-colors p-4 text-[18px]"
             >Início</a
           >
-          <a
-            href="../create-post/create.html"
-            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+          <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]"
             >Criar Post</a
           >
-          <a
-            href="../sobre/about.html"
-            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+          <a href="../sobre/about.html" class="hover:text-cor3 transition-colors p-4 text-[18px]"
             >Sobre</a
           >
-          <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]"
+          <a
+            href="#footer"
+            class="hover:text-cor3 transition-colors p-4 text-[18px]"
             >Contato</a
           >
           <a
-            href="../login/logIn.html"
+            href="./logIn.html"
             class="hover:text-cor3 transition-colors p-4 text-[18px]"
             >Log In</a
           >
@@ -125,77 +124,76 @@
         </div>
       </div>
     </header>
-    <main class="pt-24 mt-5">
-      <div class="container mx-auto md:px-10">
-        <div class="mx-auto p-4 rounded-xl shadow-lg md:gap-5">
-          <div
-            class="mx-auto bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-[14px] md:p-[16px] rounded-xl ease-in duration-300 md:w-[80%] shadow-xl md:max-w-[800px]"
-          >
-            <img
-              class="w-full h-full rounded-lg"
-              src="../../assets/img/img-next-page/fisica.jpg"
-              alt="Imagem do GTA VI"
-            />
-          </div>
 
-          <!-- Conteúdo do post -->
-          <div class="flex-1 md:px-36">
-            <span
-              class="text-cor5 uppercase font-bold tracking-widest bg-[#a4a1f72f] px-5 py-2 rounded-xl max-w-max"
-              >Games</span
-            >
-            <h2 class="text-4xl font-bold mt-5 mb-4 text-cor2">
-              Avanço da física quântica em Oxford
+    <!-- MAIN -->
+    <main class="pt-32 pb-6 mt-5 px-10">
+      <section class="flex flex-col md:flex-row min-h-screen">
+        <!-- Imagem lateral -->
+        <div class="md:w-1/2 hidden md:block">
+          <img
+            src="../../assets/img/login-img/img-log1.avif"
+            alt="Imagem login"
+            class="w-full h-full object-cover rounded-r-2xl"
+          />
+        </div>
+
+        <!-- Formulário de Login -->
+        <div
+          class="md:w-1/2 w-full flex items-center justify-center p-8 bg-white"
+        >
+          <div class="w-full max-w-md">
+            <h2 class="text-3xl font-bold text-pink-500 mb-6">
+              Bem-vindo de volta!
             </h2>
-            <p
-              class="text-lg text-cor2 leading-relaxed mt-5"
-              style="font-family: 'Roboto'"
-            >
-              &nbsp &nbsp A Universidade de Oxford vem liderando algumas das
-              iniciativas mais promissoras em física quântica em 2025,
-              apresentando progressos em computação distribuída, teletransporte
-              quântico de operações e precisão inédita de qubits.
-            </p>
-            <p
-              class="text-lg text-cor2 leading-relaxed mt-5"
-              style="font-family: 'Roboto'"
-            >
-              &nbsp &nbsp Em fevereiro de 2025, cientistas de Oxford
-              demonstraram — pela primeira vez — o teletransporte de gates
-              lógicos (operações fundamentais de algoritmos) entre dois
-              processadores quânticos separados por aproximadamente dois metros.
-              Utilizando entrelaçamento via enlaces fotônicos, os pesquisadores
-              conseguiram executar o algoritmo de Grover em um sistema
-              distribuído, provando que múltiplos módulos podem operar como uma
-              única máquina quântica reuters.com +9 physics.ox.ac.uk +9
-              cherwell.org +9 . Esse experimento resolve um dos maiores desafios
-              da área — a escalabilidade — ao permitir que pequenos
-              processadores sejam interligados para formar computadores maiores,
-              sem exigir a construção de um único dispositivo gigante.
-            </p>
-            <p
-              class="text-lg text-cor2 leading-relaxed mt-5"
-              style="font-family: 'Roboto'"
-            >
-              &nbsp &nbsp Oxford está pavimentando o caminho para uma nova era
-              da computação — móveis, distribuídos e extremamente precisos. Seus
-              avanços em teletransporte de gates e controle de qubits aproximam
-              gigantescos ganhos em inteligência artificial, simulações
-              químicas, comunicações seguras e muito mais.
-            </p>
-            3
 
-            <div class="flex mt-5 justify-between items-center">
-              <div
-                class="text-cor5 text-[12px] uppercase font-bold tracking-widest bg-[#a4a1f72f] px-4 py-3 rounded-xl inline-block mt-5"
-              >
-                06 MAR 2025
+            <form class="space-y-5">
+              <div>
+                <label
+                  for="email"
+                  class="block text-[18px] font-medium text-cor3"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="seuemail@exemplo.com"
+                />
               </div>
-            </div>
+
+              <div>
+                <label
+                  for="password"
+                  class="block text-[18px] font-medium text-cor3"
+                  >Senha</label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  class="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="********"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-pink-500 text-white py-2 rounded-lg hover:bg-cor8 transition duration-300"
+              >
+                Entrar
+              </button>
+
+              <p class="text-center text-sm text-gray-600 mt-4">
+                Não tem uma conta?
+                <a href="#" class="text-pink-500 hover:underline text-[18px]"
+                  >Criar conta</a
+                >
+              </p>
+            </form>
           </div>
         </div>
-      </div>
+      </section>
     </main>
+
     <div
       class="mt-10 h-[4px] w-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 bg bg-[length:400%_100%] animate-colorAnimation"
     ></div>
