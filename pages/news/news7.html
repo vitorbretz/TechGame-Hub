@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../output.css" rel="stylesheet" />
+    <title>TechGame-Hub</title>
+  </head>
+  <body
+    class="bg-cor6 w-full h-full"
+    style="
+      background-image: url('../../assets/img/detalhe-body/download (1).png');
+      background-size: 11px;
+    "
+  >
+    <header
+      class="py-6 fixed top-0 left-0 w-full z-50 bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] md:p-6"
+    >
+      <div class="flex justify-between items-center h-10">
+        <!-- Logo -->
+        <a
+          href="../../index.html"
+          class="h-24 flex items-center w-24 cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-contain"
+            src="../../assets/img/logo/—Pngtree—vdeo games console neon style_5984009.png"
+            alt="Logo TechGame-Hub"
+          />
+          <span class="text-2xl text-cor7 font-bold">TechGame-</span>
+          <span class="text-2xl text-cor2 font-bold">Hub</span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden text-cor2 lg:flex">
+          <a
+            href="../../index.html"
+            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+            >Início</a
+          >
+          <a
+            href="../create-post/create.html"
+            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+            >Criar Post</a
+          >
+          <a
+            href="../sobre/about.html"
+            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+            >Sobre</a
+          >
+          <a href="#" class="hover:text-cor3 transition-colors p-4 text-[18px]"
+            >Contato</a
+          >
+          <a
+            href="../login/logIn.html"
+            class="hover:text-cor3 transition-colors p-4 text-[18px]"
+            >Log In</a
+          >
+        </nav>
+
+        <!-- Menu Mobile + Perfil -->
+        <div class="flex items-center gap-4">
+          <!-- Botão menu mobile -->
+          <button
+            id="menu-btn"
+            class="w-8 h-8 flex flex-col justify-between items-center group cursor-pointer lg:hidden"
+          >
+            <span
+              class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:-rotate-45 group-[.open]:translate-y-3.5"
+            ></span>
+            <span
+              class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:opacity-0"
+            ></span>
+            <span
+              class="block w-full h-1 bg-cor2 rounded transition-all duration-300 group-[.open]:rotate-45 group-[.open]:-translate-y-3.5"
+            ></span>
+          </button>
+
+          <!-- Menu dropdown -->
+          <div
+            id="dropdown-menu"
+            class="absolute top-20 right-8 bg-cor5 text-cor2 shadow-md hidden flex-col gap-10 p-4 z-50"
+          >
+            <a
+              href="../../index.html"
+              class="hover:text-cor3 transition-colors block p-5 text-[18px]"
+              >Início</a
+            >
+            <a
+              href="../create-post/create.html"
+              class="hover:text-cor3 transition-colors block p-5 text-[18px]"
+              >Criar Post</a
+            >
+            <a
+              href="../sobre/about.html"
+              class="hover:text-cor3 transition-colors block p-5 text-[18px]"
+              >Sobre</a
+            >
+            <a
+              href="#footer"
+              class="hover:text-cor3 transition-colors block p-5 text-[18px]"
+              >Contato</a
+            >
+            <a
+              href="../login/"
+              class="hover:text-cor3 transition-colors block p-5 text-[18px]"
+              >Log In</a
+            >
+          </div>
+
+          <!-- Avatar -->
+          <div class="h-[50px] w-[50px] rounded-xl cursor-pointer">
+            <img
+              class="border-4 border-solid border-cor6 rounded-2xl"
+              src="../../assets/img/face/WhatsApp Image 2025-05-26 at 18.36.44.jpeg"
+              alt="Foto de perfil"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="pt-24 mt-5">
+      <div class="container mx-auto md:px-10">
+        <div class="mx-auto p-4 rounded-xl shadow-lg md:gap-5">
+          <div
+            class="mx-auto bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 p-[14px] md:p-[16px] rounded-xl ease-in duration-300 md:w-[80%] shadow-xl md:max-w-[800px]"
+          >
+            <img
+              class="w-full h-full rounded-lg"
+              src="../../assets/img/img-next-page/fisica.jpg"
+              alt="Imagem do GTA VI"
+            />
+          </div>
+
+          <!-- Conteúdo do post -->
+          <div class="flex-1 md:px-36">
+            <span
+              class="text-cor5 uppercase font-bold tracking-widest bg-[#a4a1f72f] px-5 py-2 rounded-xl max-w-max"
+              >Games</span
+            >
+            <h2 class="text-4xl font-bold mt-5 mb-4 text-cor2">
+              Avanço da física quântica em Oxford
+            </h2>
+            <p
+              class="text-lg text-cor2 leading-relaxed mt-5"
+              style="font-family: 'Roboto'"
+            >
+              &nbsp &nbsp A Universidade de Oxford vem liderando algumas das
+              iniciativas mais promissoras em física quântica em 2025,
+              apresentando progressos em computação distribuída, teletransporte
+              quântico de operações e precisão inédita de qubits.
+            </p>
+            <p
+              class="text-lg text-cor2 leading-relaxed mt-5"
+              style="font-family: 'Roboto'"
+            >
+              &nbsp &nbsp Em fevereiro de 2025, cientistas de Oxford
+              demonstraram — pela primeira vez — o teletransporte de gates
+              lógicos (operações fundamentais de algoritmos) entre dois
+              processadores quânticos separados por aproximadamente dois metros.
+              Utilizando entrelaçamento via enlaces fotônicos, os pesquisadores
+              conseguiram executar o algoritmo de Grover em um sistema
+              distribuído, provando que múltiplos módulos podem operar como uma
+              única máquina quântica reuters.com +9 physics.ox.ac.uk +9
+              cherwell.org +9 . Esse experimento resolve um dos maiores desafios
+              da área — a escalabilidade — ao permitir que pequenos
+              processadores sejam interligados para formar computadores maiores,
+              sem exigir a construção de um único dispositivo gigante.
+            </p>
+            <p
+              class="text-lg text-cor2 leading-relaxed mt-5"
+              style="font-family: 'Roboto'"
+            >
+              &nbsp &nbsp Oxford está pavimentando o caminho para uma nova era
+              da computação — móveis, distribuídos e extremamente precisos. Seus
+              avanços em teletransporte de gates e controle de qubits aproximam
+              gigantescos ganhos em inteligência artificial, simulações
+              químicas, comunicações seguras e muito mais.
+            </p>
+            3
+
+            <div class="flex mt-5 justify-between items-center">
+              <div
+                class="text-cor5 text-[12px] uppercase font-bold tracking-widest bg-[#a4a1f72f] px-4 py-3 rounded-xl inline-block mt-5"
+              >
+                06 MAR 2025
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="mt-10 h-[4px] w-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-400 bg bg-[length:400%_100%] animate-colorAnimation"
+    ></div>
+    <footer
+      id="footer"
+      class="mt-10 py-8 w-full bg-cor5 drop-shadow-md shadow-[0_10px_10px_rgba(0,0,0,0.20)] md:p-6"
+    >
+      <div class="container mx-auto flex flex-col items-center justify-center">
+        <div id="social-media">
+          <ul class="flex gap-5">
+            <li class="h-10 w-10 cursor-pointer">
+              <img
+                class="h-full w-full"
+                src="../../assets/img/icons/instagram_1077042.png"
+                alt=""
+              />
+            </li>
+            <li class="h-10 w-10 cursor-pointer">
+              <img
+                class="h-full w-full"
+                src="../../assets/img/icons/facebook_1400811.png"
+                alt=""
+              />
+            </li>
+            <li class="h-10 w-10 cursor-pointer">
+              <img
+                class="h-full w-full"
+                src="../../assets/img/icons/whatsapp_1077055.png"
+                alt=""
+              />
+            </li>
+            <li class="h-10 w-10 cursor-pointer">
+              <img
+                class="h-full w-full"
+                src="../../assets/img/icons/x_3522662.png"
+                alt=""
+              />
+            </li>
+          </ul>
+        </div>
+        <div id="logo-footer"></div>
+        <div class="mt-5 md:flex-row flex flex-col md:gap-16" id="contacts">
+          <div>
+            <h3 class="text-2xl text-center text-cor2">Navegação</h3>
+            <ul>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                <a href="">Inicio</a>
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                <a href="">Log in</a>
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                <a href="../sobre/about.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+          <div></div>
+          <ul>
+            <h3 class="text-2xl text-center text-cor2">Insights</h3>
+            <li class="text-center pt-2 text-[18px] cursor-pointer">Events</li>
+            <li class="text-center pt-2 text-[18px] cursor-pointer">
+              Comunidade
+            </li>
+            <li class="text-center pt-2 text-[18px] cursor-pointer">loja</li>
+            <li class="text-center pt-2 text-[18px] cursor-pointer">News</li>
+          </ul>
+          <div>
+            <h3 class="text-2xl text-center text-cor2">Contatos</h3>
+            <ul>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Centro de ajuda
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Endereço
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">Email</li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Suporte
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-2xl text-center text-cor2">Politicas</h3>
+            <ul>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Cookies
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Politicas de segurança
+              </li>
+              <li class="text-center pt-2 text-[18px] cursor-pointer">
+                Termos de uso
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h3 class="text-2xl text-cor2">© VITOR BRETZ - BLOG</h3>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src=".././../scripts/script.js"></script>
+  </body>
+</html>
