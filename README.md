@@ -8,6 +8,13 @@ TechGame-Hub é um blog sobre tecnologia e games com foco em notícias, análise
 - Recursos visuais organizados em `assets/img/`.
 - Páginas organizadas em `pages/` para cada seção (news, sobre, login, create-post).
 
+## 🛠️ Tecnologias
+- **HTML5** — estrutura semântica e moderna
+- **Tailwind CSS** — framework CSS utilitário para estilização rápida
+- **JavaScript** — interatividade e funcionalidades dinâmicas
+- **GitHub Pages** — hospedagem gratuita do site estático
+- **npm** — gerenciamento de dependências
+
 ## Estrutura do repositório
 ```
 TechGame-Hub/
@@ -29,35 +36,6 @@ TechGame-Hub/
 ├── output.css                         # CSS compilado (gerado)
 ├── tailwind.config.js                 # Configuração do Tailwind
 └── package.json                       # Dependências e scripts
-```
-
-## Rotas e Caminhos
-Todos os caminhos devem usar **`./`** (relativo) para funcionar no GitHub Pages:
-
-| Página | Rota |
-|--------|------|
-| Inicial | `./index.html` ou `/` |
-| Notícias | `./pages/news/newsMain.html` |
-| Criar Post | `./pages/create-post/create.html` |
-| Sobre | `./pages/sobre/about.html` |
-| Login | `./pages/login/logIn.html` |
-
-## Como usar links corretos nos arquivos HTML
-
-**Exemplos de links que funcionam:**
-```html
-<!-- No index.html -->
-<link href="./output.css" rel="stylesheet" />
-<a href="./pages/news/newsMain.html">Notícias</a>
-<a href="./pages/login/logIn.html">Login</a>
-<img src="./assets/img/logo.png" alt="Logo" />
-<script src="./scripts/script.js"></script>
-
-<!-- Nas páginas em pages/ (ex: newsMain.html) -->
-<link href="../../output.css" rel="stylesheet" />
-<a href="../../index.html">Início</a>
-<img src="../../assets/img/hero.png" alt="Hero" />
-<script src="../../scripts/script.js"></script>
 ```
 
 ## Como executar localmente
